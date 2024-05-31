@@ -79,9 +79,16 @@ def tela_denuncia():
     
     vetor_denuncia = [str]*5
 
-    print('Por favor, preencha os campos abaixo para relatar um caso de poluição de água. Sua identidade será mantida anônima')
+    print('Por favor, preencha os campos abaixo para relatar um'
+          'caso de poluição de água. Sua identidade será mantida anônima')
 
-    topicos =  [tipo_de_poluicao(), descricao_da_poluicao(), localizacao_da_ocorrencia(), data_e_hora_da_ocorrencia(), informacoes_adicionais()]
+    topicos =  [
+        tipo_de_poluicao(), 
+        descricao_da_poluicao(), 
+        localizacao_da_ocorrencia(), 
+        data_e_hora_da_ocorrencia(), 
+        informacoes_adicionais()
+        ]
 
     for c in range(len(vetor_denuncia)):
         vetor_denuncia[c] = topicos[c]

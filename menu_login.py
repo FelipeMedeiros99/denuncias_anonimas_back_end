@@ -28,13 +28,20 @@ def criar_arquivo():
 
 
 def adicionar_elemento():
+    vetor_dados = [str] * 4
     nome = input('Insira seu nome: ')
     email = input('Insira seu email: ')
     senha = input('Insira sua senha: ')
     telefone = input('Insira seu n° de telefone: ')
     
+    vetor_dados[0]=nome
+    vetor_dados[1]=email
+    vetor_dados[2]=senha
+    vetor_dados[3]=telefone
+
     lista_usuarios = salvar_e_exibir_elementos()
-    lista_usuarios.append([nome, email, senha, telefone])
+
+    lista_usuarios.append(vetor_dados)
 
     with open('usuarios.pickle', 'wb') as documento:
         pickle.dump(lista_usuarios, documento)
