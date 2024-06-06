@@ -25,15 +25,8 @@ def menu_principal():
                 print('Somos alunos querendo férias ;(')
             case "5":
                 break
-
             case _:
                 print("Opção inválida")
-
-
-
-
-
-
 
 
 if __name__=="__main__":

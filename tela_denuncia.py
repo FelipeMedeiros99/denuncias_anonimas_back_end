@@ -79,7 +79,7 @@ def tela_denuncia():
     
     vetor_denuncia = [str]*5
 
-    print('Por favor, preencha os campos abaixo para relatar um'
+    print('Por favor, preencha os campos abaixo para relatar um '
           'caso de poluição de água. Sua identidade será mantida anônima')
 
     topicos =  [
